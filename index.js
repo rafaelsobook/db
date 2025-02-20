@@ -25,8 +25,8 @@ import monsterInfo from './creations/monsterInfo.js';
 const log = console.log
 
 
-const webSocketURL ="ws://localhost:3000" || "https://dungeonborntcpcon.onrender.com" ||  "https://dbtcp.herokuapp.com"
-const APIURL = 'http://localhost:8100' ||'https://fair-ruby-fly-tam.cyclic.app' ||  "https://dbserver.herokuapp.com"
+const webSocketURL = "https://db-tcp.onrender.com"  ||  "ws://localhost:3000"    || "https://dungeonborntcpcon.onrender.com" ||   "https://dbtcp.herokuapp.com"
+const APIURL = 'https://dungeonborn-a.onrender.com' || 'http://localhost:8100' || "https://dbserver.herokuapp.com"
 const imgDir = "./images/peoplepics/"
 
 const apiOpt = (meth, toPost, token) => {
