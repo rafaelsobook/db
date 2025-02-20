@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Born</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    
+    <div class="home-page"></div>
+    <div class="login-container"></div>
+    <div class="popup"></div>
+    <div class="loading-screen"></div>
+
+    <script type="module" src="/index.js"></script>
+    <script>
+        // Register service worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker not registered', err))
+            })
+        }
+    </script>
+</body>
+</html> 

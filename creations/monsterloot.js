@@ -1,0 +1,62 @@
+const goblinLoot = [
+    {
+        name: 'goblinTooth', 
+        itemType: 'loot',
+        price: 10,
+        desc: "You can determine a goblin's strength by its tooth",
+        for: "goblin",
+    },
+    {
+        name: 'fabric', 
+        itemType: 'loot',
+        price: 10,
+        desc: "this can also be used for crafting medicines, shelter and weapon",
+        for: "slime",
+    },
+    {
+        name: 'fabric', 
+        itemType: 'loot',
+        price: 10,
+        desc: "this can also be used for crafting medicines, shelter and weapon",
+        for: "ghost",
+    },
+    {
+        name: 'dagger', 
+        itemType: 'sword',
+        price: 20,
+        plusDmg: 13,
+        desc: "Assasin's favorite weapon, useful for survival",
+        for: "goblin",
+        cState: 500,
+        durability: 500,
+    },
+    {
+        name: 'villageSpear', 
+        itemType: 'sword',
+        price: 100,
+        plusDmg: 10,
+        desc: "A Pointed Spear useful for throwing, good for hunting",
+        for: "goblin",
+        cState: 500,
+        durability: 500,
+    },
+    {
+        name: 'berries', 
+        itemType: 'food',
+        price: 5,
+        desc: "refreshing fruit can replenish stamina",
+        for: "goblin",
+    },
+    {
+        name: 'stick', 
+        itemType: 'sword',
+        price: 10,
+        plusDmg: 12,
+        desc: "can be use for war but will not last long due to it's durability",
+        cState: 500,
+        durability: 500,
+        for: "goblin",
+    },
+]
+
+export default goblinLoot
